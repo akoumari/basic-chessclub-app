@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="706.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication6.ReportingServicesController">
+  <children>
+    <ImageView fitHeight="400.0" fitWidth="706.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false">
+      <image>
+        <Image url="@images/DeepSpace.jpg" />
+      </image>
+    </ImageView>
+    <Button layoutX="647.0" layoutY="370.0" mnemonicParsing="false" onMouseClicked="#backToMain" text="Back" />
+    <ListView fx:id="memberList" layoutX="33.0" layoutY="42.0" prefHeight="200.0" prefWidth="200.0" />
+    <ListView fx:id="bestList" layoutX="253.0" layoutY="42.0" prefHeight="200.0" prefWidth="200.0" />
+    <ListView fx:id="winList" layoutX="475.0" layoutY="42.0" prefHeight="200.0" prefWidth="200.0" />
+    <Label layoutX="100.0" layoutY="20.0" text="Member List" textFill="WHITE" />
+    <Label layoutX="319.0" layoutY="20.0" text="Best Player/s" textFill="WHITE" />
+    <Label layoutX="511.0" layoutY="20.0" text="Player/s with Most Wins" textFill="WHITE" />
+    <Button layoutX="289.0" layoutY="297.0" mnemonicParsing="false" onMouseClicked="#refresh" prefWidth="128.0" text="Refresh All Reports" />
+  </children>
+</AnchorPane>

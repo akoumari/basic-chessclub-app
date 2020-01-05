@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication6.MemberServicesController">
+  <children>
+    <ImageView fitHeight="399.0" fitWidth="601.3333129882812" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false">
+      <image>
+        <Image url="@images/DeepSpace.jpg" />
+      </image>
+    </ImageView>
+    <Button layoutX="530.0" layoutY="366.0" mnemonicParsing="false" onMouseClicked="#backToMain" text="Back" />
+    <AnchorPane layoutX="35.0" layoutY="34.0" prefHeight="152.0" prefWidth="200.0">
+      <children>
+        <TextField id="f_name" fx:id="fName" layoutX="24.0" layoutY="29.0" prefWidth="152.0" />
+        <TextField fx:id="lName" layoutX="24.0" layoutY="76.0" prefWidth="152.0" />
+        <Button layoutX="72.0" layoutY="108.0" mnemonicParsing="false" onMouseClicked="#addMember" text="Add" />
+        <Label layoutX="71.0" layoutY="6.0" text="First Name" textFill="WHITE" />
+        <Label layoutX="71.0" layoutY="57.0" text="Last Name" textFill="WHITE" />
+      </children>
+    </AnchorPane>
+    <AnchorPane layoutX="295.0" layoutY="71.0" prefHeight="200.0" prefWidth="280.0">
+      <children>
+        <ListView fx:id="memberList" layoutX="0.0" layoutY="0.0" prefHeight="200.0" prefWidth="200.0" />
+        <Button layoutX="206.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#refreshMembers" text="Refresh" />
+      </children>
+    </AnchorPane>
+    <AnchorPane layoutX="28.0" layoutY="193.0" prefHeight="127.0" prefWidth="200.0">
+      <children>
+        <TextField fx:id="playerId" layoutX="100.0" layoutY="37.0" prefWidth="76.0" />
+        <Label layoutX="67.0" layoutY="6.0" text="Add a Game" textFill="WHITE" />
+        <Label layoutX="34.0" layoutY="37.0" text="Member ID:" textFill="WHITE" />
+        <Button layoutX="34.0" layoutY="79.0" mnemonicParsing="false" onMouseClicked="#addWin" text="Won" />
+        <Button layoutX="134.0" layoutY="79.0" mnemonicParsing="false" onMouseClicked="#addLoss" text="Lost" />
+      </children>
+    </AnchorPane>
+    <Label fx:id="message" contentDisplay="CENTER" layoutX="59.0" layoutY="352.0" minHeight="14.0" prefHeight="14.0" prefWidth="162.0" text="" textFill="WHITE" />
+    <Label layoutX="362.0" layoutY="37.0" text="Member List" textFill="WHITE" />
+  </children>
+</AnchorPane>
